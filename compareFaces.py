@@ -18,7 +18,7 @@ stream.seek(0) #Before this sys call, the stream is at the end of its position, 
 
 
 # Jason's API url_compare_faces = 'https://6fc23h655b.execute-api.ap-southeast-2.amazonaws.com/dev' # This is the api call to facerekgonition lambda function
-url_compare_faces = 'https://2dhjhij9ui.execute-api.ap-northeast-1.amazonaws.com/dev'
+url_compare_faces = 'https://mwm1tvyyb0.execute-api.ap-northeast-1.amazonaws.com/dev'
 res = requests.post(url = url_compare_faces,
                     data = stream,
                     headers = {'Content-Type': 'application/octet-stream'}) #Make sure the API has settings to accept binary data

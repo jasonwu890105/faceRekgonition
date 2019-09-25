@@ -18,10 +18,10 @@ with PiCamera() as camera:
 
 stream.seek(0) #Before this sys call, the stream is at the end of its position, which means if we don't call the stream to go back to its first position(0 posibtion), the data will actually will none/null(0)
 
-name = input('Please Enter this person name (eg, jason_wu): ')
+name = input('Please Enter this person name (eg, jason_wu, please include underscore in between first and last.): ')
 
 # Jason's API : url_index_faces = 'https://ohxiwbxnwf.execute-api.ap-southeast-2.amazonaws.com/dev' # This is the api call to facerekgonition lambda function
-url_index_faces = 'https://6sq49vxuvl.execute-api.ap-northeast-1.amazonaws.com/Dev'
+url_index_faces = 'https://ul9xu8s6f0.execute-api.ap-northeast-1.amazonaws.com/dev'
 try:
     
     res = requests.post(url = url_index_faces,
